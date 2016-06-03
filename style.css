@@ -1,0 +1,63 @@
+li{
+	display: inline-block;
+	width: 100px;
+	height: 200px;
+	background-color: black;
+	transform: skewX(-50deg);
+	position: relative;
+	transition: all 0.5s ease;
+}
+ul{
+	position: relative;
+	left: 200px;
+	top:100px;
+}
+
+li:before{
+	content: "";
+	position: absolute;
+	background-color: green;
+	width: 100px;
+	height: 20px;
+	left: 12px;
+	top: 200px;
+	transform: skewX(50deg);
+	transition: all 0.5s ease;
+
+}
+
+li:after{
+	content: "";
+	position: absolute;
+	background-color: red;
+	width: 24px;
+	height: 200px;
+	left: 100px;
+	top: 10px;
+	transform: skewY(39deg);
+	transition: all 0.5s ease;
+	
+
+}
+
+li:hover{
+	transform: skewX(-50deg) translate(-50px, -50px);
+}
+
+li: hover:before{
+	height: 50px;
+	left: 30px;
+	
+
+}
+li: hover:after{
+
+	height: 61px;
+	left: 26px;
+	
+
+
+
+}
+
+
